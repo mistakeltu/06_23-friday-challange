@@ -4,6 +4,7 @@ console.log('sup');
 const formDOM = document.querySelector('form');
 const inputDOM = document.querySelector('input');
 let winDOM = document.querySelector('div');
+let resetDOM = document.querySelector('.reset');
 
 formDOM.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -14,7 +15,7 @@ formDOM.addEventListener('submit', (event) => {
 function game(string) {
     let winornot = '';
     let skaicius = Math.floor(Math.random() * 3) + 1;
-    //console.log(skaicius);
+    console.log(skaicius);
 
     if (string === 'zirkles') {
         if (skaicius === 1) {
